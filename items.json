@@ -21407,6 +21407,4099 @@
                     }
                 }
             }
+        },
+        {
+            "id": "minecraft:candle",
+            "name": "Свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:honeycomb",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:string",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:white_candle",
+            "name": "Белая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:white_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:light_gray_candle",
+            "name": "Светло-серая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:light_gray_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:gray_candle",
+            "name": "Серая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:gray_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:black_candle",
+            "name": "Чёрная свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:black_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:brown_candle",
+            "name": "Коричневая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:brown_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:red_candle",
+            "name": "Красная свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:red_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:orange_candle",
+            "name": "Оранжевая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:orange_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:yellow_candle",
+            "name": "Жёлтая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:yellow_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:lime_candle",
+            "name": "Лаймовая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:lime_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:green_candle",
+            "name": "Зелёная свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:green_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cyan_candle",
+            "name": "Бирюзовая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:cyan_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:light_blue_candle",
+            "name": "Светло-синяя свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:light_blue_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:blue_candle",
+            "name": "Синяя свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:blue_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:purple_candle",
+            "name": "Фиолетовая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:purple_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:magenta_candle",
+            "name": "Пурпурная свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:magenta_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pink_candle",
+            "name": "Розовая свеча",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:candle",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:pink_dye",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:white_banner",
+            "name": "Белое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:white_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:light_gray_banner",
+            "name": "Светло-серое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:light_gray_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:gray_banner",
+            "name": "Серое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:gray_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:black_banner",
+            "name": "Чёрное знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:black_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:brown_banner",
+            "name": "Коричневое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:brown_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:red_banner",
+            "name": "Красное знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:red_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:orange_banner",
+            "name": "Оранжевое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:orange_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:yellow_banner",
+            "name": "Жёлтое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:yellow_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:lime_banner",
+            "name": "Лаймовое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:lime_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:green_banner",
+            "name": "Зелёное знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:green_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cyan_banner",
+            "name": "Бирюзовое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:cyan_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:light_blue_banner",
+            "name": "Светло-синее знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:light_blue_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:blue_banner",
+            "name": "Синее знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:blue_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:purple_banner",
+            "name": "Фиолетовое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:purple_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:magenta_banner",
+            "name": "Пурпурное знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:magenta_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pink_banner",
+            "name": "Розовое знамя",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:pink_wool",
+                                                "count": 6
+                                            },
+                                            {
+                                                "id": "minecraft:stick",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dirt_path",
+            "name": "Тропинка",
+            "obtainable": {
+                "primary_method": "stripping",
+                "methods": {
+                    "stripping": {
+                        "id": "minecraft:dirt",
+                        "count": 1,
+                        "required_tool": "Любая лопата"
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dirt",
+            "name": "Земля",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:coarse_dirt",
+            "name": "Грубая земля",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:dirt",
+                                                "count": 2
+                                            },
+                                            {
+                                                "id": "minecraft:gravel",
+                                                "count": 2
+                                            }
+                                        ],
+                                        "result_count": 4
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:rooted_dirt",
+            "name": "Земля с корнями",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:farmland",
+            "name": "Пашня",
+            "obtainable": {
+                "primary_method": "stripping",
+                "methods": {
+                    "stripping": {
+                        "id": "minecraft:dirt",
+                        "count": 1,
+                        "required_tool": "Любая мотыга"
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:mud",
+            "name": "Грязь",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:clay",
+            "name": "Глина",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:clay_ball",
+                                                "count": 4
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:gravel",
+            "name": "Гравий",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.9,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.9
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.45
+                            },
+                            "stone_shovel": {
+                                "speed": 0.25
+                            },
+                            "copper_shovel": {
+                                "speed": 0.2
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.15
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:sand",
+            "name": "Песок",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:red_sand",
+            "name": "Красный песок",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:packed_ice",
+            "name": "Плотный лёд",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:ice",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:blue_ice",
+            "name": "Синий лёд",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:packed_ice",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:snow_block",
+            "name": "Снежный блок",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:snowball",
+                                                "count": 4
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:snow",
+            "name": "Снег",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:snow_block",
+                                                "count": 3
+                                            }
+                                        ],
+                                        "result_count": 6
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:moss_block",
+            "name": "Моховой блок",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.15
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.1
+                            },
+                            "stone_hoe": {
+                                "speed": 0.05
+                            },
+                            "copper_hoe": {
+                                "speed": 0.05
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:moss_carpet",
+            "name": "Моховой ковёр",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:moss_block",
+                                                "count": 2
+                                            }
+                                        ],
+                                        "result_count": 3
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.15
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.1
+                            },
+                            "stone_hoe": {
+                                "speed": 0.05
+                            },
+                            "copper_hoe": {
+                                "speed": 0.05
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pale_moss_block",
+            "name": "Бледный моховой блок",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.15
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.1
+                            },
+                            "stone_hoe": {
+                                "speed": 0.05
+                            },
+                            "copper_hoe": {
+                                "speed": 0.05
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pale_moss_carpet",
+            "name": "Бледный моховой ковёр",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:pale_moss_block",
+                                                "count": 2
+                                            }
+                                        ],
+                                        "result_count": 3
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.15
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.1
+                            },
+                            "stone_hoe": {
+                                "speed": 0.05
+                            },
+                            "copper_hoe": {
+                                "speed": 0.05
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pale_hanging_moss",
+            "name": "Бледный свисающий мох",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:calcite",
+            "name": "Кальцит",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "wooden_pickaxe",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "wooden_pickaxe": {
+                                "speed": 0.6
+                            },
+                            "stone_pickaxe": {
+                                "speed": 0.3
+                            },
+                            "copper_pickaxe": {
+                                "speed": 0.25
+                            },
+                            "iron_pickaxe": {
+                                "speed": 0.2
+                            },
+                            "diamond_pickaxe": {
+                                "speed": 0.15
+                            },
+                            "netherite_pickaxe": {
+                                "speed": 0.15
+                            },
+                            "golden_pickaxe": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dripstone_block",
+            "name": "Блок натёчного камня",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:pointed_dripstone",
+                                                "count": 4
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "wooden_pickaxe",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "wooden_pickaxe": {
+                                "speed": 1.15
+                            },
+                            "stone_pickaxe": {
+                                "speed": 0.6
+                            },
+                            "copper_pickaxe": {
+                                "speed": 0.45
+                            },
+                            "iron_pickaxe": {
+                                "speed": 0.4
+                            },
+                            "diamond_pickaxe": {
+                                "speed": 0.3
+                            },
+                            "netherite_pickaxe": {
+                                "speed": 0.25
+                            },
+                            "golden_pickaxe": {
+                                "speed": 0.2
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pointed_dripstone",
+            "name": "Натёчный камень",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 2.25
+                            },
+                            "wooden_pickaxe": {
+                                "speed": 1.15
+                            },
+                            "stone_pickaxe": {
+                                "speed": 0.6
+                            },
+                            "copper_pickaxe": {
+                                "speed": 0.45
+                            },
+                            "iron_pickaxe": {
+                                "speed": 0.4
+                            },
+                            "diamond_pickaxe": {
+                                "speed": 0.3
+                            },
+                            "netherite_pickaxe": {
+                                "speed": 0.25
+                            },
+                            "golden_pickaxe": {
+                                "speed": 0.2
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:magma_block",
+            "name": "Блок магмы",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:magma_cream",
+                                                "count": 4
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:obsidian",
+            "name": "Обсидиан",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "diamond_pickaxe",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "diamond_pickaxe": {
+                                "speed": 9.4
+                            },
+                            "netherite_pickaxe": {
+                                "speed": 8.35
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:crying_obsidian",
+            "name": "Плачущий обсидиан",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "diamond_pickaxe",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "diamond_pickaxe": {
+                                "speed": 9.4
+                            },
+                            "netherite_pickaxe": {
+                                "speed": 8.35
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:soul_sand",
+            "name": "Песок душ",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:soul_soil",
+            "name": "Земля душ",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.75
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.4
+                            },
+                            "stone_shovel": {
+                                "speed": 0.2
+                            },
+                            "copper_shovel": {
+                                "speed": 0.15
+                            },
+                            "iron_shovel": {
+                                "speed": 0.15
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.1
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.1
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:bone_block",
+            "name": "Костный блок",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:bone_meal",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:ancient_debris",
+            "name": "Древние обломки",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "diamond_pickaxe",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "diamond_pickaxe": {
+                                "speed": 5.65
+                            },
+                            "netherite_pickaxe": {
+                                "speed": 5
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:raw_iron_block",
+            "name": "Блок необработанного железа",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:raw_iron",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:raw_copper_block",
+            "name": "Блок необработанной меди",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:raw_copper",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:raw_gold_block",
+            "name": "Блок необработанного золота",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:raw_gold",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:glowstone",
+            "name": "Светокамень",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:glowstone_dust",
+                                                "count": 4
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:mangrove_roots",
+            "name": "Мангровые корни",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 1.05
+                            },
+                            "wooden_axe": {
+                                "speed": 0.55
+                            },
+                            "stone_axe": {
+                                "speed": 0.3
+                            },
+                            "copper_axe": {
+                                "speed": 0.25
+                            },
+                            "iron_axe": {
+                                "speed": 0.2
+                            },
+                            "diamond_axe": {
+                                "speed": 0.15
+                            },
+                            "netherite_axe": {
+                                "speed": 0.15
+                            },
+                            "golden_axe": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:muddy_mangrove_roots",
+            "name": "Грязные мангровые корни",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:mangrove_roots",
+                                                "count": 1
+                                            },
+                                            {
+                                                "id": "minecraft:mud",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 1.05
+                            },
+                            "wooden_shovel": {
+                                "speed": 0.55
+                            },
+                            "stone_shovel": {
+                                "speed": 0.3
+                            },
+                            "copper_shovel": {
+                                "speed": 0.25
+                            },
+                            "iron_shovel": {
+                                "speed": 0.2
+                            },
+                            "diamond_shovel": {
+                                "speed": 0.15
+                            },
+                            "netherite_shovel": {
+                                "speed": 0.15
+                            },
+                            "golden_shovel": {
+                                "speed": 0.1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:oak_leaves",
+            "name": "Дубовые листья",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:spruce_leaves",
+            "name": "Еловые листья",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:birch_leaves",
+            "name": "Берёзовые листья",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:jungle_leaves",
+            "name": "Листья джунглей",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:acacia_leaves",
+            "name": "Акациевые листья",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dark_oak_leaves",
+            "name": "Листья тёмного дуба",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:mangrove_leaves",
+            "name": "Мангровые листья",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cherry_leaves",
+            "name": "Вишнёвые листья",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:azalea_leaves",
+            "name": "Листья азалии",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:flowering_azalea_leaves",
+            "name": "Цветущие листья азалии",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:nether_wart_block",
+            "name": "Блок наростков Нижнего мира",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:nether_wart",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 1.5
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.75
+                            },
+                            "stone_hoe": {
+                                "speed": 0.4
+                            },
+                            "copper_hoe": {
+                                "speed": 0.3
+                            },
+                            "iron_hoe": {
+                                "speed": 0.25
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.2
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.2
+                            },
+                            "golden_hoe": {
+                                "speed": 0.15
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:warped_wart_block",
+            "name": "Блок искажённых наростков",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:warped_wart",
+                                                "count": 9
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 1.5
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.75
+                            },
+                            "stone_hoe": {
+                                "speed": 0.4
+                            },
+                            "copper_hoe": {
+                                "speed": 0.3
+                            },
+                            "iron_hoe": {
+                                "speed": 0.25
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.2
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.2
+                            },
+                            "golden_hoe": {
+                                "speed": 0.15
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:shroomlight",
+            "name": "Грибосвет",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 1.5
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.75
+                            },
+                            "stone_hoe": {
+                                "speed": 0.4
+                            },
+                            "copper_hoe": {
+                                "speed": 0.3
+                            },
+                            "iron_hoe": {
+                                "speed": 0.25
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.2
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.2
+                            },
+                            "golden_hoe": {
+                                "speed": 0.15
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:oak_sapling",
+            "name": "Саженец дуба",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "oak_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:spruce_sapling",
+            "name": "Саженец ели",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "spruce_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:birch_sapling",
+            "name": "Саженец берёзы",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "birch_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:jungle_sapling",
+            "name": "Саженец джунглей",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.025,
+                        "source_block": "jungle_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:acacia_sapling",
+            "name": "Саженец акации",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "acacia_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dark_oak_sapling",
+            "name": "Саженец тёмного дуба",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "dark_oak_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:mangrove_propagule",
+            "name": "Проросток мангрового дерева",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "mangrove_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cherry_sapling",
+            "name": "Саженец вишни",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "cherry_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pale_oak_leaves",
+            "name": "Листья бледного дуба",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pale_oak_sapling",
+            "name": "Саженец бледного дуба",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.05,
+                        "source_block": "pale_oak_leaves",
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_hoe": {
+                                "speed": 0.15
+                            },
+                            "stone_hoe": {
+                                "speed": 0.1
+                            },
+                            "copper_hoe": {
+                                "speed": 0.1
+                            },
+                            "iron_hoe": {
+                                "speed": 0.05
+                            },
+                            "diamond_hoe": {
+                                "speed": 0.05
+                            },
+                            "netherite_hoe": {
+                                "speed": 0.05
+                            },
+                            "golden_hoe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:azalea",
+            "name": "Азалия",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:flowering_azalea",
+            "name": "Цветущая азалия",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:brown_mushroom",
+            "name": "Коричневый гриб",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:red_mushroom",
+            "name": "Красный гриб",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:crimson_fungus",
+            "name": "Багровый гриб",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:warped_fungus",
+            "name": "Искажённый гриб",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:short_grass",
+            "name": "Низкая трава",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:fern",
+            "name": "Папоротник",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:short_dry_grass",
+            "name": "Низкая сухая трава",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:bush",
+            "name": "Куст",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dead_bush",
+            "name": "Сухой куст",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dandelion",
+            "name": "Одуванчик",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:poppy",
+            "name": "Мак",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:blue_orchid",
+            "name": "Синяя орхидея",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:allium",
+            "name": "Лук-скорода",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:azure_bluet",
+            "name": "Хаустония серая",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:red_tulip",
+            "name": "Красный тюльпан",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:orange_tulip",
+            "name": "Оранжевый тюльпан",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:white_tulip",
+            "name": "Белый тюльпан",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pink_tulip",
+            "name": "Розовый тюльпан",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:oxeye_daisy",
+            "name": "Ромашка",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cornflower",
+            "name": "Василёк",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:lily_of_the_valley",
+            "name": "Ландыш",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:torchflower",
+            "name": "Факелоцвет",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cactus_flower",
+            "name": "Цветок кактуса",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:closed_eyeblossom",
+            "name": "Закрытый глазоцвет",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:open_eyeblossom",
+            "name": "Открытый глазоцвет",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pink_petals",
+            "name": "Розовые лепестки",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:wildflowers",
+            "name": "Полевые цветы",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:leaf_litter",
+            "name": "Лиственный опад",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    },
+                    "smelting": {
+                        "type": {
+                            "furnace": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:oak_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:spruce_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:birch_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:jungle_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:acacia_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:dark_oak_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:mangrove_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:cherry_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:azalea_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:flowering_azalea_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    },
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:pale_oak_leaves",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:spore_blossom",
+            "name": "Спороцвет",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:firefly_bush",
+            "name": "Светлячковый куст",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:bamboo",
+            "name": "Бамбук",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 1.5
+                            },
+                            "wooden_axe": {
+                                "speed": 0.75
+                            },
+                            "stone_axe": {
+                                "speed": 0.4
+                            },
+                            "copper_axe": {
+                                "speed": 0.3
+                            },
+                            "iron_axe": {
+                                "speed": 0.25
+                            },
+                            "diamond_axe": {
+                                "speed": 0.2
+                            },
+                            "netherite_axe": {
+                                "speed": 0.2
+                            },
+                            "golden_axe": {
+                                "speed": 0.15
+                            },
+                            "any_sword": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:sugar_cane",
+            "name": "Сахарный тростник",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:cactus",
+            "name": "Кактус",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.6
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:crimson_roots",
+            "name": "Багровые корни",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:warped_roots",
+            "name": "Искажённые корни",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:nether_sprouts",
+            "name": "Ростки Нижнего мира",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:weeping_vines",
+            "name": "Плакучие лозы",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:twisting_vines",
+            "name": "Вьющиеся лозы",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:vine",
+            "name": "Лоза",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:tall_grass",
+            "name": "Высокая трава",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:large_fern",
+            "name": "Большой папоротник",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:tall_dry_grass",
+            "name": "Высокая сухая трава",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:sunflower",
+            "name": "Подсолнух",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:lilac",
+            "name": "Сирень",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:rose_bush",
+            "name": "Куст роз",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:peony",
+            "name": "Пион",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pitcher_plant",
+            "name": "Кувшинница",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:big_dripleaf",
+            "name": "Большой натёчный лист",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.15
+                            },
+                            "wooden_axe": {
+                                "speed": 0.1
+                            },
+                            "stone_axe": {
+                                "speed": 0.05
+                            },
+                            "copper_axe": {
+                                "speed": 0.05
+                            },
+                            "iron_axe": {
+                                "speed": 0.05
+                            },
+                            "diamond_axe": {
+                                "speed": 0.05
+                            },
+                            "netherite_axe": {
+                                "speed": 0.05
+                            },
+                            "golden_axe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:small_dripleaf",
+            "name": "Маленький натёчный лист",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:chorus_flower",
+            "name": "Цветок хоруса",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.6
+                            },
+                            "wooden_axe": {
+                                "speed": 0.3
+                            },
+                            "stone_axe": {
+                                "speed": 0.15
+                            },
+                            "copper_axe": {
+                                "speed": 0.15
+                            },
+                            "iron_axe": {
+                                "speed": 0.1
+                            },
+                            "diamond_axe": {
+                                "speed": 0.1
+                            },
+                            "netherite_axe": {
+                                "speed": 0.1
+                            },
+                            "golden_axe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:glow_lichen",
+            "name": "Светящийся лишайник",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "shears",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "shears": {
+                                "speed": 0.3
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:hanging_roots",
+            "name": "Свисающие корни",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:dried_ghast",
+            "name": "Высохшийй гаст",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:ghast_tear",
+                                                "count": 8
+                                            },
+                                            {
+                                                "id": "minecraft:soul_sand",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:wheat_seeds",
+            "name": "Семена пшеницы",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 1,
+                        "chance": 0.125,
+                        "source_blocks": [
+                            "short_grass",
+                            "tall_grass", 
+                            "fern",
+                            "large_fern"
+                        ],
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }

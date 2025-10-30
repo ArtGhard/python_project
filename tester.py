@@ -1,11 +1,9 @@
 import json
 import os
 
-# Получаем текущую директорию и ищем файл
 current_dir = os.getcwd()
 print(f"Текущая директория: {current_dir}")
 
-# Пробуем разные возможные пути
 possible_paths = [
     'items.json',
     './items.json',
@@ -30,16 +28,13 @@ else:
     print("Файл items.json не найден! Проверьте расположение файла.")
     exit()
 
-# Создаем словарь для поиска
 items_dict = {}
 for item in json_data['all_items']:
     items_dict[item['name']] = item
 
-# Ввод данных
 item_name = input("Введите название предмета: ")
 count = int(input("Введите количество: "))
 
-# Поиск и расчет
 if item_name not in items_dict:
     print("Предмет не найден!")
 else:
@@ -55,7 +50,6 @@ else:
 
         for ingredient in recipe['ingredients']:
             total_needed = ingredient['count'] * recipes_needed
-            # Ищем имя ингредиента
             ing_name = ingredient['id']
             for search_item in json_data['all_items']:
                 if search_item['id'] == ingredient['id']:
@@ -76,3 +70,13 @@ else:
             else:
                 total_time = 2 * (speed_data['speed'] * count)
             print(f"{tool}: {total_time:.2f} сек")
+
+    elif 'smelting' in item['obtainable']['methods']:
+        smelting_data = item['obtainable']['methods']['smelting']['type']
+        recipe = smelting_data['furnace']['ingredient_options'][0]
+        result_id = recipe['ingredients'][0]['id']
+        for search_item in json_data['all_items']:
+            if search_item['id'] == result_id:
+                ing_name = search_item['name']
+                break
+        print(f"\n Нужно будет переплавить {count} {ing_name}")
