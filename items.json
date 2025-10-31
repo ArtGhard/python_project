@@ -25500,6 +25500,71 @@
                     }
                 }
             }
+        },
+        {
+            "id": "minecraft:cocoa_beans",
+            "name": "Какао-бобы",
+            "obtainable": {
+                "primary_method": "mining",
+                "methods": {
+                    "mining": {
+                        "minimal_tool": "hand",
+                        "result_count": 3,
+                        "mining_methods": {
+                            "hand": {
+                                "speed": 0.3
+                            },
+                            "wooden_axe": {
+                                "speed": 0.15
+                            },
+                            "stone_axe": {
+                                "speed": 0.1
+                            },
+                            "copper_axe": {
+                                "speed": 0.1
+                            },
+                            "iron_axe": {
+                                "speed": 0.05
+                            },
+                            "diamond_axe": {
+                                "speed": 0.05
+                            },
+                            "netherite_axe": {
+                                "speed": 0.05
+                            },
+                            "golden_axe": {
+                                "speed": 0.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "minecraft:pumpkin_seeds",
+            "name": "Семена тыквы",
+            "obtainable": {
+                "primary_method": "crafting",
+                "methods": {
+                    "crafting": {
+                        "type": {
+                            "crafting_table": {
+                                "ingredient_options": [
+                                    {
+                                        "ingredients": [
+                                            {
+                                                "id": "minecraft:pumpkin",
+                                                "count": 1
+                                            }
+                                        ],
+                                        "result_count": 4
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }
