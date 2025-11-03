@@ -79,4 +79,4 @@ else:
             if search_item['id'] == result_id:
                 ing_name = search_item['name']
                 break
-        print(f"\n Нужно будет переплавить {count} {ing_name}")
+        print(f"\n Нужно будет  переплавить {count} {ing_name}")
