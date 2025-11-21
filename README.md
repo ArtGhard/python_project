@@ -1,17 +1,4 @@
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
+<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
 
 # Тема проекта
 
@@ -117,17 +104,4 @@ Minecraft имеет постоянную поддержку от своего �
 Эти факторы делают проект крайне интересным в разработке и выгодным в финансовом плане, так как при подключении к 
 сайту монетизации он может принести большой доход из-за огромной популярности Minecraft.
 
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
-<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
+<img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
