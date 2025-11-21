@@ -25,7 +25,7 @@ calculator_usage = pd.DataFrame({
 months = pd.date_range('2026-01', '2030-01', freq='M')
 revenue_data = pd.DataFrame({
     'Month': months,
-    'Ad_Revenue': np.random.normal(1500, 300, len(months)).cumsum() + 1000,
+    'Ad_Revenue': np.random.normal(1000, 100, len(months)).cumsum(),
     'Premium_Users': np.random.randint(50, 200, len(months)).cumsum(),
     'Traffic': np.random.normal(10000, 2000, len(months)).cumsum()
 })
