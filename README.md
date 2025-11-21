@@ -1,6 +1,6 @@
 <img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;"><img src="analysis/analysis_img/emerald.png" width="41" style="margin-right: 5px;">
 
-# Тема проекта <img src="analysis/analysis_img/Eye_of_Ender_JE2_BE2.png" width="50"  style="margin-bottom: -10px;">
+# Тема проекта <img src="analysis/analysis_img/Eye_of_Ender_JE2_BE2.png" width="50" style="vertical-align: middle; transform: translateY(-2px);">
 
 **Калькулятор предметов игры Minecraft**
 ---
@@ -9,7 +9,7 @@
 каких либо других предметов.
 
 ---
-# Генерация данных <img src="analysis/analysis_img/Water_Bottle_JE2_BE2.png" width="50"  style="margin-bottom: -10px;">
+# Генерация данных <img src="analysis/analysis_img/Water_Bottle_JE2_BE2.png" width="50" style="vertical-align: middle; transform: translateY(-2px);">
 
 В items.json будет представлен список всех предметов игры Minecraft версии 1.21.9 с нужными для вычислений полями.
 ---
@@ -45,7 +45,7 @@
 
 > высокая сложность реализации
 ---
-# Анализ данных <img src="analysis/analysis_img/Golden_Carrot_JE4_BE2.png" width="50" style="margin-bottom: -10px;">
+# Анализ данных <img src="analysis/analysis_img/Golden_Carrot_JE4_BE2.png" width="50" style="vertical-align: middle; transform: translateY(-2px);">
 
 ## Обзор эффективности проекта
 
