@@ -22,7 +22,7 @@ calculator_usage = pd.DataFrame({
     'Daily_Users': [12500, 8900, 15600, 6700, 21300]
 })
 
-months = pd.date_range('2023-01', '2024-01', freq='M')
+months = pd.date_range('2026-01', '2030-01', freq='M')
 revenue_data = pd.DataFrame({
     'Month': months,
     'Ad_Revenue': np.random.normal(1500, 300, len(months)).cumsum() + 1000,
