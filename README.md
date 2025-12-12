@@ -45,7 +45,9 @@
 > невозможность получения в режиме выживания
 
 > высокая сложность реализации
----
+
+<img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41">
+
 # Анализ данных <img src="analysis/analysis_img/Golden_Carrot_JE4_BE2.png" width="50" valign="middle">
 
 ## Обзор эффективности проекта
