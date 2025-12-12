@@ -9,7 +9,8 @@
 Это небольшое описание того о чём проект. Проект будет являться игровым калькулятором по Minecraft, который будет счиать предметы необходимые для создания 
 каких либо других предметов.
 
----
+<img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41">
+
 # Генерация данных <img src="analysis/analysis_img/Water_Bottle_JE2_BE2.png" width="50"  valign="middle">
 
 В items.json представлен список практически всех предметов игры Minecraft версии 1.21.9 с нужными для вычислений полями.
