@@ -11969,11 +11969,19 @@
                         }
                     },
                     "from_mobs": {
-                        "mob": "sheep",
-                        "chance": 1.0,
-                        "result_count": 1
+                      "type": {
+                        "mob_drops": {
+                          "drop_options": [
+                            {
+                              "mob": "minecraft:sheep",
+                              "chance": 1.0,
+                              "result_count": 1
+                            }
+                          ]
+                        }
+                      }
                     }
-                }
+              }
             }
         },
         {
@@ -12186,11 +12194,19 @@
                         }
                     },
                     "from_mobs": {
-                        "mob": "sheep",
-                        "chance": 1.0,
-                        "result_count": 1
+                      "type": {
+                        "mob_drops": {
+                          "drop_options": [
+                            {
+                              "mob": "minecraft:sheep",
+                              "chance": 1.0,
+                              "result_count": 1
+                            }
+                          ]
+                        }
+                      }
                     }
-                }
+              }
             }
         },
         {
@@ -12403,11 +12419,19 @@
                         }
                     },
                     "from_mobs": {
-                        "mob": "sheep",
-                        "chance": 1.0,
-                        "result_count": 1
+                      "type": {
+                        "mob_drops": {
+                          "drop_options": [
+                            {
+                              "mob": "minecraft:sheep",
+                              "chance": 1.0,
+                              "result_count": 1
+                            }
+                          ]
+                        }
+                      }
                     }
-                }
+              }
             }
         },
         {
@@ -12620,11 +12644,19 @@
                         }
                     },
                     "from_mobs": {
-                        "mob": "sheep",
-                        "chance": 1.0,
-                        "result_count": 1
+                      "type": {
+                        "mob_drops": {
+                          "drop_options": [
+                            {
+                              "mob": "minecraft:sheep",
+                              "chance": 1.0,
+                              "result_count": 1
+                            }
+                          ]
+                        }
+                      }
                     }
-                }
+              }
             }
         },
         {
@@ -12837,11 +12869,19 @@
                         }
                     },
                     "from_mobs": {
-                        "mob": "sheep",
-                        "chance": 1.0,
-                        "result_count": 1
+                      "type": {
+                        "mob_drops": {
+                          "drop_options": [
+                            {
+                              "mob": "minecraft:sheep",
+                              "chance": 1.0,
+                              "result_count": 1
+                            }
+                          ]
+                        }
+                      }
                     }
-                }
+              }
             }
         },
         {
@@ -13054,7 +13094,7 @@
                         }
                     },
                     "from_mobs": {
-                        "mob": "sheep",
+                        "mob": "minecraft:sheep",
                         "chance": 1.0,
                         "result_count": 1
                     }
@@ -25486,7 +25526,7 @@
                         "minimal_tool": "hand",
                         "result_count": 1,
                         "chance": 0.125,
-                        "source_blocks": [
+                        "source_block": [
                             "short_grass",
                             "tall_grass", 
                             "fern",
@@ -25864,7 +25904,7 @@
                             "mob_drops": {
                                 "drop_options": [
                                     {
-                                        "mob": "elder_guardian",
+                                        "mob": "minecraft:elder_guardian",
                                         "chance": 1.0,
                                         "result_count": 1
                                     }
@@ -26118,9 +26158,9 @@
             "id": "minecraft:sculk",
             "name": "Скалк",
             "obtainable": {
-                "primary_method": "from_chests",
+                "primary_method": "from_chest",
                 "methods": {
-                    "from_chests": {
+                    "from_chest": {
                         "type": {
                             "chest_loot": {
                                 "loot_options": [
@@ -26147,7 +26187,7 @@
                             "mob_drops": {
                                 "drop_options": [
                                     {
-                                        "mob": "warden",
+                                        "mob": "minecraft:warden",
                                         "chance": 1.0,
                                         "result_count": [1]
                                     }
@@ -26155,7 +26195,7 @@
                             }
                         }
                     },
-                    "from_chests": {
+                    "from_chest": {
                         "type": {
                             "chest_loot": {
                                 "loot_options": [
@@ -26175,9 +26215,9 @@
             "id": "minecraft:sculk_sensor",
             "name": "Скалк-сенсор",
             "obtainable": {
-                "primary_method": "from_chests",
+                "primary_method": "from_chest",
                 "methods": {
-                    "from_chests": {
+                    "from_chest": {
                         "type": {
                             "chest_loot": {
                                 "loot_options": [
@@ -43855,17 +43895,8 @@
                 "primary_method": "naturally",
                 "methods": {
                     "naturally": {
-                        "type": {
-                            "passive_production": {
-                                "production_options": [
-                                    {
-                                        "mob": "minecraft:chicken",
-                                        "time_range": [300, 600],
-                                        "conditions": "Курицы из умеренных биомов"
-                                    }
-                                ]
-                            }
-                        }
+                      "time_range": 450,
+                      "conditions": "Курицы из тёплых биомов"      
                     }
                 }
             }
@@ -43877,17 +43908,8 @@
                 "primary_method": "naturally",
                 "methods": {
                     "naturally": {
-                        "type": {
-                            "passive_production": {
-                                "production_options": [
-                                    {
-                                        "mob": "minecraft:chicken",
-                                        "time_range": [300, 600],
-                                        "conditions": "Курицы из холодных биомов"
-                                    }
-                                ]
-                            }
-                        }
+                      "time_range": 450,
+                      "conditions": "Курицы из холодных биомов"      
                     }
                 }
             }
@@ -43898,18 +43920,9 @@
             "obtainable": {
                 "primary_method": "naturally",
                 "methods": {
-                    "naturally": {
-                        "type": {
-                            "passive_production": {
-                                "production_options": [
-                                    {
-                                        "mob": "minecraft:chicken",
-                                        "time_range": [300, 600],
-                                        "conditions": "Курицы из тёплых биомов"
-                                    }
-                                ]
-                            }
-                        }
+                    "naturally": {        
+                      "time_range": 450,
+                      "conditions": "Курицы из тёплых биомов"      
                     }
                 }
             }
