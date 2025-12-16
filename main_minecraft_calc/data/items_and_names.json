@@ -1042,7 +1042,7 @@
     "golden_pickaxe":"Золотая кирка",
     "diamond_pickaxe":"Алмазная кирка",
     "netherite_pickaxe":"Незеритовая кирка",
-    "copper_picaxe":"Медная кирка",
+    "copper_pickaxe":"Медная кирка",
     "wooden_axe":"Деревянный топор",
     "stone_axe":"Каменный топор",
     "iron_axe":"Железный топор",
@@ -1064,5 +1064,15 @@
     "diamond_hoe":"Алмазная мотыга",
     "netherite_hoe":"Незеритовая мотыга",
     "copper_hoe":"Медная мотыга",
-    "shears":"Ножницы"
+    "shears":"Ножницы",
+    "minecraft:coal_ore":"Угольная руда",
+    "minecraft:iron_ore":"Железная руда",
+    "minecraft:copper_ore":"Медная руда",
+    "minecraft:gold_ore":"Золотая руда",
+    "minecraft:redstone_ore":"Руда редстоуна",
+    "minecraft:lapis_ore":"Лазуритовая руда",
+    "minecraft:diamond_ore":"Алмазная руда",
+    "minecraft:emerald_ore":"Изумрудная руда",
+    "minecraft:nether_gold_ore":"Незерская золотая руда",
+    "minecraft:nether_quartz_ore":"Руда кварца"
 }
