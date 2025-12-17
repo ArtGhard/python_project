@@ -103,6 +103,8 @@ def method_format_main(result_data):
         return naturally_format(result_data)
     elif method == 'smelting':
         return smelting_format(result_data)
+    elif method == 'from_chest':
+        return from_chest_format(result_data)
 
 
 def mining_format(result_data):
@@ -208,6 +210,10 @@ def from_mobs_format(result_data):
 
 
 def smelting_format(result_data):
+    pass
+
+
+def from_chest_format(result_data):
     pass
 
 
@@ -370,7 +376,7 @@ def from_mobs(item, value):
 
 # метод на стадии доработки (к субботе появится (наверное))
 def smelting(item, value):
-    pass
+    smelting_data = item['obtainable']['methods']['smelting']['type']
 
 
 # метод на стадии доработки (к субботе появится (наверное))

@@ -1,3 +1,8 @@
+# ❗ Дисклеймер ❗
+
+> Этот проект не является официальным продуктом Mojang Studios или Microsoft.  
+> Все изображения предметов являются собственностью Mojang Studios и используются в соответствии с [Fan Content Guidelines](https://www.minecraft.net/fan-content-guidelines) в образовательных целях.
+
 <img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41"><img src="analysis/analysis_img/emerald.png" width="41">
 
 # Тема проекта <img src="analysis/analysis_img/Eye_of_Ender_JE2_BE2.png" width="50"  valign="middle">

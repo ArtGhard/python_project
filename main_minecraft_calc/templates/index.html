@@ -4,8 +4,13 @@
 
 {% block content %}
 <div class="header-bar">
+    <img src="{{url_for('static', filename='images/main_icon.png')}}" class="main-icon">
     <div class="circle-end"></div>
+    <div class="circle-end2"></div>
     <img src="{{url_for('static', filename='images/diamond_sword.png')}}" class="header-icon">
+    <div class="mirror">
+      <img src="{{url_for('static', filename='images/diamond_sword.png')}}" class="header-icon2">
+    </div>
 </div>
 
 <main class="main-content">
@@ -21,7 +26,10 @@
             <input type="number" id="value" name="value" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Посчитать</button>
+        <div class="submit-button-wrapper">
+            <button type="submit" class="btn btn-primary">Посчитать</button>
+            <img src="{{url_for('static', filename='images/Ender_Pearl_JE3_BE2.png')}}" class="submit-icon" alt="Ender Pearl">
+        </div>
     </form>
 
     {% if result_input %}
