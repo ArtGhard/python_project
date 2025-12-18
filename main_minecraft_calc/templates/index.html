@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-
-{% block title %}Калькулятор — Minecraft Calculator{% endblock %}
-
 {% block content %}
 <div class="header-bar">
     <img src="{{url_for('static', filename='images/main_icon.png')}}" class="main-icon">
@@ -27,8 +24,15 @@
         </div>
 
         <div class="submit-button-wrapper">
-            <button type="submit" class="btn btn-primary">Посчитать</button>
-            <img src="{{url_for('static', filename='images/Ender_Pearl_JE3_BE2.png')}}" class="submit-icon" alt="Ender Pearl">
+          <button type="submit" class="btn btn-primary" id="calculate-btn">Посчитать</button>
+          <img 
+            src="{{ url_for('static', filename='images/Ender_Pearl_JE3_BE2.png') }}" 
+            class="submit-icon" 
+            id="pearl-icon"
+            alt="Ender Pearl"
+            data-hover="{{ url_for('static', filename='images/Eye_of_Ender_JE2_BE2.png') }}"
+            data-default="{{ url_for('static', filename='images/Ender_Pearl_JE3_BE2.png') }}"
+          >
         </div>
     </form>
 
@@ -37,7 +41,17 @@
         <h2>Наилучший способ получения:</h2>
         {{ result_input | safe }}
         <form method="GET" style="margin-top: 16px;">
-            <button type="submit" class="btn btn-secondary">Сбросить</button>
+          <div class="submit-button-wrapper">
+            <button type="submit" class="btn btn-secondary" id="clear-btn">Сбросить</button>
+            <img 
+            src="{{ url_for('static', filename='images/furn_non_fire.jpg') }}" 
+            class="submit-icon" 
+            id="furn-icon"
+            alt="fire-furn"
+            data-hover="{{ url_for('static', filename='images/furn_fire.jpg') }}"
+            data-default="{{ url_for('static', filename='images/furn_non_fire.jpg') }}"
+          >
+          </div>
         </form>
     </div>
     {% endif %}

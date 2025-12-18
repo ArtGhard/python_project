@@ -210,7 +210,18 @@ def from_mobs_format(result_data):
 
 
 def smelting_format(result_data):
-    pass
+    for key_smelt in item_names:
+        if result_data['smelt_ingredient'] == key_smelt:
+            result_data['smelt_ingredient'] = item_names[key_smelt]
+        else:
+            pass
+    return f"""
+        <h3>Переплавка</h3>
+        <p><strong>Станок:</strong> {result_data['table']}<p>
+        <p><strong>Ингредиент для
+        переплавки:</strong> {result_data['smelt_ingredient']}<p>
+        <p><strong>Нужное количество:</strong> {result_data['need_count']}<p>
+        """
 
 
 def from_chest_format(result_data):
@@ -374,12 +385,19 @@ def from_mobs(item, value):
     return final_result
 
 
-# метод на стадии доработки (к субботе появится (наверное))
 def smelting(item, value):
     smelting_data = item['obtainable']['methods']['smelting']['type']
+    smelt = smelting_data['furnace']['ingredient_options'][0]
+    smelt_ingredient = smelt['ingredients'][0]['id']
+    need_count = round(value / smelt['ingredients'][0]['count'])
+    final_result = {
+        'smelt_ingredient': smelt_ingredient,
+        'need_count': need_count,
+        'table': "Печь"
+    }
+    return final_result
 
 
-# метод на стадии доработки (к субботе появится (наверное))
 def from_chest(item, value):
     pass
 

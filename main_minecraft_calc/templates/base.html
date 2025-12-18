@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,48 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
+<!-- СКРИПТ JS ДЛЯ ИЗМЕНЕНИЯ КАРТИНКИ ПРИ НАВЕДЕНИИ -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('calculate-btn');
+    const icon = document.getElementById('pearl-icon');
+
+    if (button && icon) {
+      const defaultSrc = icon.dataset.default;
+      const hoverSrc = icon.dataset.hover;
+
+      button.addEventListener('mouseenter', () => {
+        icon.src = hoverSrc;
+      });
+
+      button.addEventListener('mouseleave', () => {
+        icon.src = defaultSrc;
+      });
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('clear-btn');
+    const icon = document.getElementById('furn-icon');
+
+    if (button && icon) {
+      const defaultSrc = icon.dataset.default;
+      const hoverSrc = icon.dataset.hover;
+
+      button.addEventListener('mouseenter', () => {
+        icon.src = hoverSrc;
+      });
+
+      button.addEventListener('mouseleave', () => {
+        icon.src = defaultSrc;
+      });
+    }
+  });
+</script>
+
+<!-- ПАРАМЕТРЫ ОСНОВНОГО ТЕЛА ПРОПИСАНЫ В index.html -->
 <body>
     {% block content %}
     {% endblock %}
