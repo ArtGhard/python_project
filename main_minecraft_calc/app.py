@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from pathlib import Path
 import json
 import math
+import statistics
 
 # ПРОЧИТАЙТЕ README! (ПРО РАЗРАБОТКУ ПРОЕКТА В САМОМ НИЗУ)
 
@@ -29,9 +30,17 @@ def load_items_data():
         return json.load(f)
 
 
+def load_dungeons_data():
+    basedir = Path(__file__).resolve().parent
+    filepath = basedir / 'data' / 'chest_dungeons.json'
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
 recipes = load_counting_data()
 mob_names = load_mob_data()
 item_names = load_items_data()
+dungeon_names = load_dungeons_data()
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -123,6 +132,7 @@ def mining_format(result_data):
     print(result_data)
     return f"""
         <h3>Добыча</h3>
+        <p>  </p>
         <p>Минимальный инструмент: {result_data['minimal_tool']}</p>
         <p>Нужно сломать блоков: {result_data['blocks_needed']}</p>
         <p>Добывается из: {result_data['source_blocks']}</p>
@@ -144,6 +154,7 @@ def crafting_format(result_data):
                                    result_data['needed_ingredients'].items()])
     return f"""
         <h3>Крафт</h3>
+        <p>  </p>
         <p>Станок: {result_data['craft_station']}</p>
         <h4>Ингредиенты:</h4>
         <p>{ingredients_list}</p>
@@ -164,6 +175,7 @@ def stripping_format(result_data):
     print(result_data['stripping_block'])
     return f"""
         <h3>Обтёсывание</h3>
+        <p>  </p>
         <p>Нужно обтесать: {result_data['strip_block_count']}</p>
         <p>Из чего(кого) добывается: {result_data['stripping_block']}</p>
         <p>Инструмент: {result_data['required_tool']}</p>
@@ -172,41 +184,49 @@ def stripping_format(result_data):
 
 def naturally_format(result_data):
     return f"""
-        <h3>Натуральное выпадение<h3>
-        <p>Нужное количесво ({result_data['result_count']}) выпадет
-        из: {result_data['conditions']} естественным образом</p>
-        <p> Времени поребуется: {result_data['total_time']} секунд</p>
+        <h3>Натуральное выпадение</h3>
+        <p>  </p>
+        <p><strong>Нужное количесво ({result_data['result_count']}) выпадет
+        из</strong>: {result_data['conditions']} естественным образом</p>
+        <p> <strong>Времени потребуется</strong>: {result_data['total_time']}
+        секунд</p>
     """
 
 
 def from_mobs_format(result_data):
-    if 'multiple_options' in result_data:
-        options_list = []
-        for opt in result_data['multiple_options']:
-            desc = f"""
-            <li>
-                <strong>Моб:</strong> {opt['mob']}<br>
-                <strong>Нужно убить (в среднем):</strong> {opt['kills_needed_avg']:.2f}<br>
-                {f"<strong>Условие:</strong> {opt['special_condition']
-                 ['description']}" if 'special_condition' in opt else ''}
-            </li>
-            """
-            options_list.append(desc)
-            options_html = '<ul>' + ''.join(options_list) + '</ul>'
-        return f"""
-            <h3>Добыча с мобов</h3>
-            <h4>Выпадает из:</h4>
-            {options_html}
-            """
-    else:
-        opt = result_data
-        return f"""
-            <h3>Добыча с мобов</h3>
-            <p><strong>Моб:</strong> {opt['mob']}</p>
-            <p><strong>Нужно убить (в среднем):</strong> {opt['kills_needed_avg']:.2f}</p>
-            {f"<strong>Условие:</strong> {opt['special_condition']
-             ['description']}" if 'special_condition' in opt else ''}
-            """
+    options_list = []
+    translated_data = []
+    spec = None
+    for num in result_data['mob_variations']:
+        key_in = num['mob']
+        for key_out in mob_names:
+            if key_in == key_out:
+                num['mob'] = mob_names[key_out]
+                translated_data.append(num)
+                break
+            else:
+                pass
+    for opt in translated_data:
+        if 'special_condition' in opt:
+            spec = opt['special_condition']['description']
+        else:
+            spec = 'Нет'
+        desc = f"""
+        <li>
+            <strong>Моб:</strong> {opt['mob']}<br>
+            <strong>Нужно убить мобов:</strong> {opt['kills_needed']}<br>
+            <strong>Специальное условие:</strong> {spec}<br>
+            <p>  </p>
+        </li>
+        """
+        options_list.append(desc)
+        options_html = '<ul>' + ''.join(options_list) + '</ul>'
+
+    return f"""
+        <h3>Выпадение с мобов</h3>
+        <p>  </p>
+        {options_html}
+        """
 
 
 def smelting_format(result_data):
@@ -217,6 +237,7 @@ def smelting_format(result_data):
             pass
     return f"""
         <h3>Переплавка</h3>
+        <p>  </p>
         <p><strong>Станок:</strong> {result_data['table']}<p>
         <p><strong>Ингредиент для
         переплавки:</strong> {result_data['smelt_ingredient']}<p>
@@ -225,8 +246,33 @@ def smelting_format(result_data):
 
 
 def from_chest_format(result_data):
-    pass
+    options_list = []
+    translated_data = []
+    for num in result_data['chest_variations']:
+        key_in = num['dungeon']
+        for key_out in dungeon_names:
+            if key_in == key_out:
+                num['dungeon'] = dungeon_names[key_out]
+                translated_data.append(num)
+                break
+            else:
+                pass
+    for opt in translated_data:
+        desc = f"""
+        <li>
+            <strong>Структура с сундуком:</strong> {opt['dungeon']}<br>
+            <strong>Нужно залутать сундуков:</strong> {opt['result']}<br>
+            <p>  </p>
+        </li>
+        """
+        options_list.append(desc)
+        options_html = '<ul>' + ''.join(options_list) + '</ul>'
 
+    return f"""
+        <h3>Появление в сундуках</h3>
+        <p>  </p>
+        {options_html}
+        """
 
 # ####################################################### 991
 
@@ -272,7 +318,6 @@ def mining(item, value):
         'source_blocks': mining_block,
         'blocks_needed': blocks_needed
     }
-    print(final_result)  # костыль для проверки
     return final_result
 
 
@@ -302,7 +347,6 @@ def crafting(item, value):
         'craft_station': craft_station,
         'needed_ingredients': needed_ingredients
     }
-    print(final_result)  # костыль для проверки
     return final_result
 
 
@@ -317,7 +361,6 @@ def stripping(item, value):
         'stripping_block': stripping_block,
         'required_tool': required_tool
     }
-    print(final_result)  # костыль для проверки
     return final_result
 
 
@@ -332,56 +375,38 @@ def naturally(item, value):
         'conditions': conditions,
         'total_time': total_time
     }
-    print(final_result)  # костыль для проверки
     return final_result
 
 
 def from_mobs(item, value):
-    mobs_data = item['obtainable']['methods']['from_mobs']['type']['mob_drops']
-    drop_options = mobs_data.get('drop_options', [])
-
-    if not drop_options:
-        return {"error": "Нет данных о добыче с мобов"}
-
-    results = []
-
+    drop_options2 = item['obtainable']['methods']['from_mobs']['type']
+    drop_options = drop_options2['mob_drops']['drop_options']
+    mob_variations = []
     for option in drop_options:
-        mob_id = option['mob']
-        chance = option.get('chance')
-        result_count = option.get('result_count')
-        special_condition = option.get('special_condition', {})
-
-        if isinstance(result_count, list):
-            avg_result = sum(result_count) / len(result_count)
-            kills_needed_avg = value / (avg_result * chance)
+        mob = {}
+        mob['mob'] = option['mob']
+        chance = option['chance']
+        result_raw = option['result_count']
+        if not isinstance(result_raw, list):
+            avg_count = result_raw
         else:
-
-            kills_needed_avg = value / (result_count * chance)
-
-        kills_needed_avg = round(kills_needed_avg)
-
-        result = {
-            'mob': mob_id,
-            'kills_needed_avg': kills_needed_avg,
-        }
-
-        if special_condition:
-            spawn_chance = special_condition.get('spawn_chance')
-            if spawn_chance:
-                result['special_condition'] = special_condition
-                non_done = math.ceil(kills_needed_avg / spawn_chance)
-                result['kills_needed_avg'] = non_done
-
-        results.append(result)
-
-    if len(results) == 1:
-        final_result = results[0]
-    else:
-        final_result = {
-            'multiple_options': results
-        }
-
-    print(final_result)
+            avg_count = statistics.mean(result_raw)
+        expected_per_kill = chance * avg_count
+        spawn_chance = 1.0
+        special_condition = option.get('special_condition')
+        if special_condition and 'spawn_chance' in special_condition:
+            spawn_chance = special_condition['spawn_chance']
+            mob['special_condition'] = special_condition
+        total_expected = spawn_chance * expected_per_kill
+        if total_expected <= 0:
+            kills = float('inf')
+        else:
+            kills = value / total_expected
+        mob['kills_needed'] = math.ceil(kills)
+        mob_variations.append(mob)
+    final_result = {
+        "mob_variations": mob_variations
+    }
     return final_result
 
 
@@ -399,7 +424,26 @@ def smelting(item, value):
 
 
 def from_chest(item, value):
-    pass
+    chest_data_big = item['obtainable']['methods']['from_chest']['type']
+    chest_data = chest_data_big['chest_loot']['loot_options']
+    chests = []
+    for chest_number in chest_data:
+        chest = {}
+        chest['dungeon'] = chest_number['chest']
+        chance = chest_number['chance']
+        if not isinstance(chest_number['result_count'], list):
+            result_count = value / (chest_number['result_count'] * chance)
+            chest['result'] = math.ceil(result_count)
+            chests.append(chest)
+        else:
+            result_avg = statistics.mean(chest_number['result_count'])
+            result_count = value / (result_avg * chance)
+            chest['result'] = math.ceil(result_count)
+            chests.append(chest)
+    final_result = {
+        "chest_variations": chests
+    }
+    return final_result
 
 
 if __name__ == '__main__':

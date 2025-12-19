@@ -33248,7 +33248,7 @@
                                         "result_count": [1, 2, 3, 4]
                                     },
                                     {
-                                        "chest": "fortress",
+                                        "chest": "stronghold",
                                         "chance": 0.186,
                                         "result_count": [4, 5, 6, 7, 8, 9]
                                     }
@@ -33725,7 +33725,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33742,7 +33742,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33759,7 +33759,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33776,7 +33776,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33793,7 +33793,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33810,7 +33810,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33827,7 +33827,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33844,7 +33844,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33861,7 +33861,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33878,7 +33878,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33895,7 +33895,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
@@ -33912,7 +33912,7 @@
                                                 "count": 3
                                             },
                                             {
-                                                "id": "minecraft:nether_quartz",
+                                                "id": "minecraft:quartz",
                                                 "count": 3
                                             },
                                             {
