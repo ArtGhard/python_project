@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for, session, jsonify
+from flask import redirect
+from auth import init_db, register_user, login_user, get_user_by_id
 from pathlib import Path
 import json
 import math
@@ -7,6 +9,9 @@ import statistics
 # ПРОЧИТАЙТЕ README! (ПРО РАЗРАБОТКУ ПРОЕКТА В САМОМ НИЗУ)
 
 app = Flask(__name__)
+app.secret_key = 'add_you_super_mega_ultra_secret_key'
+
+init_db()
 
 
 # ЗАГРУЗКА ДАННЫХ ДЛЯ ПОДСЧЁТА
@@ -47,9 +52,23 @@ item_names = load_items_data()
 dungeon_names = load_dungeons_data()
 
 
+METHOD_LABELS = {
+    'mining': 'Добыча',
+    'crafting': 'Крафт',
+    'smelting': 'Переплавка',
+    'stripping': 'Обтёсывание',
+    'naturally': 'Натуральное выпадение',
+    'from_mobs': 'С мобов',
+    'from_chest': 'Из сундуков'
+}
+
+
 # СОЗДАНИЕ ОСНОВНОЙ СТРАНИЦЫ
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    user = None
+    if 'user_id' in session:
+        user = get_user_by_id(session['user_id'])
     result_data = None
     user_item = ""
     user_value = ""
@@ -93,8 +112,52 @@ def index():
         'index.html',
         result_data=result_data,
         user_item=user_item,
-        user_value=user_value
+        user_value=user_value,
+        user=user,
+        METHOD_LABELS=METHOD_LABELS
     )
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    username = request.form['username']
+    nickname = request.form['nickname']
+    password = request.form['password']
+    confirm_password = request.form['confirm_password']
+    avatar = request.form.get('avatar', 'default.png')  # по умолчанию
+
+    if password != confirm_password:
+        return jsonify({"success": False, "message": "Пароли не совпадают"})
+
+    if len(password) < 8:
+        return jsonify({"success": False, "message": "Пароль должен быть\
+                         не менее 8 символов"})
+
+    if register_user(username, nickname, password, avatar):
+        return jsonify({"success": True, "message": "Регистрация успешна"})
+    else:
+        return jsonify({"success": False, "message": "Пользователь уже\
+                         существует"})
+
+
+@app.route('/login', methods=['POST'])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+
+    user_id = login_user(username, password)
+    if user_id:
+        session['user_id'] = user_id
+        return jsonify({"success": True})
+    else:
+        return jsonify({"success": False, "message":
+                        "Неверный логин или пароль"})
+
+
+@app.route('/logout')
+def logout():
+    session.pop('user_id', None)
+    return redirect(url_for('index'))
 
 
 def process_input(item, value):
@@ -160,7 +223,7 @@ def calculate_method_by_name(item, method_name, value):
 def format_method_result(method_name, result_data):
     if method_name == 'mining':
         return mining_format(result_data)
-    elif method_name == 'crafting': 
+    elif method_name == 'crafting':
         return crafting_format(result_data)
     elif method_name == 'stripping':
         return stripping_format(result_data)

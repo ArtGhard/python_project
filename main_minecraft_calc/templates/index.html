@@ -58,7 +58,7 @@
                             <input type="hidden" name="value" value="{{ user_value }}">
                             <input type="hidden" name="selected_method" value="{{ method_key }}">
                             <button class="dropdown-item" type="submit">
-                                {{ method_key | replace('_', ' ') | capitalize }}
+                                {{ METHOD_LABELS.get(method_key, method_key | replace('_', ' ') | capitalize) }}
                             </button>
                         </form>
                     </li>
