@@ -8,12 +8,14 @@ import statistics
 
 app = Flask(__name__)
 
+
 # ЗАГРУЗКА ДАННЫХ ДЛЯ ПОДСЧЁТА
 def load_counting_data():
     basedir = Path(__file__).resolve().parent
     filepath = basedir / 'data' / 'items.json'
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
+
 
 # ЗАГРУЗКА ДАННЫХ ДЛЯ ПЕРЕВОДА МОБОВ
 def load_mob_data():
@@ -22,12 +24,14 @@ def load_mob_data():
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+
 # ЗАГРУЗКА ДАННЫХ ДЛЯ ПЕРЕВОДА ПРЕДМЕТОВ
 def load_items_data():
     basedir = Path(__file__).resolve().parent
     filepath = basedir / 'data' / 'items_and_names.json'
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
+
 
 # ЗАГРУЗКА ДАННЫХ ДЛЯ ПЕРЕВОДА СТРУКТУР
 def load_dungeons_data():
@@ -74,7 +78,7 @@ def calculate_resources(item_name, value):
     return method_format_main(result)
 
 
-# ПОИСК ПРЕДМЕТА ПО ВВЕДННОМУ В ПОЛЕ НАЗВАНИЮ 
+# ПОИСК ПРЕДМЕТА ПО ВВЕДННОМУ В ПОЛЕ НАЗВАНИЮ
 def find_item_by_name(name):
     for item in recipes['all_items']:
         if item['name'] == name:
