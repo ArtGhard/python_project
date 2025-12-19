@@ -11,49 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<!-- СКРИПТЫ JS ДЛЯ ИЗМЕНЕНИЯ КАРТИНКИ ПРИ НАВЕДЕНИИ -->
+<!-- СКРИПТ JS ДЛЯ ИЗМЕНЕНИЯ КАРТИНКИ ПРИ НАВЕДЕНИИ -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const button = document.getElementById('calculate-btn');
-    const icon = document.getElementById('pearl-icon');
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = [
+    { btnId: 'calculate-btn', iconId: 'pearl-icon' },
+    { btnId: 'clear-btn', iconId: 'furn-icon' }
+  ];
 
+  buttons.forEach(({ btnId, iconId }) => {
+    const button = document.getElementById(btnId);
+    const icon = document.getElementById(iconId);
     if (button && icon) {
       const defaultSrc = icon.dataset.default;
       const hoverSrc = icon.dataset.hover;
-
-      button.addEventListener('mouseenter', () => {
-        icon.src = hoverSrc;
-      });
-
-      button.addEventListener('mouseleave', () => {
-        icon.src = defaultSrc;
-      });
+      button.addEventListener('mouseenter', () => icon.src = hoverSrc);
+      button.addEventListener('mouseleave', () => icon.src = defaultSrc);
     }
   });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const button = document.getElementById('clear-btn');
-    const icon = document.getElementById('furn-icon');
-
-    if (button && icon) {
-      const defaultSrc = icon.dataset.default;
-      const hoverSrc = icon.dataset.hover;
-
-      button.addEventListener('mouseenter', () => {
-        icon.src = hoverSrc;
-      });
-
-      button.addEventListener('mouseleave', () => {
-        icon.src = defaultSrc;
-      });
-    }
-  });
+});
 </script>
 
 <!-- ПАРАМЕТРЫ ОСНОВНОГО ТЕЛА ПРОПИСАНЫ В index.html -->
 <body>
     {% block content %}
     {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

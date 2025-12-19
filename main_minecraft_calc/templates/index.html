@@ -2,12 +2,12 @@
 {% block content %}
 <!-- ШАПКА -->
 <div class="header-bar">
-    <img src="{{url_for('static', filename='images/main_icon.png')}}" class="main-icon">
+    <img src="{{ url_for('static', filename='images/main_icon.png') }}" class="main-icon">
     <div class="circle-end"></div>
     <div class="circle-end2"></div>
-    <img src="{{url_for('static', filename='images/diamond_sword.png')}}" class="header-icon">
+    <img src="{{ url_for('static', filename='images/diamond_sword.png') }}" class="header-icon">
     <div class="mirror">
-      <img src="{{url_for('static', filename='images/diamond_sword.png')}}" class="header-icon2">
+      <img src="{{ url_for('static', filename='images/diamond_sword.png') }}" class="header-icon2">
     </div>
 </div>
 
@@ -17,14 +17,14 @@
     <form method="POST" class="craft-form">
         <div class="form-row">
             <label for="item">Название предмета:</label>
-            <input type="text" id="item" name="item" required>
+            <input type="text" id="item" name="item" value="{{ user_item }}" required>
         </div>
 
         <div class="form-row">
             <label for="value">Количество:</label>
-            <input type="number" id="value" name="value" required>
+            <input type="number" id="value" name="value" value="{{ user_value }}" required>
         </div>
-
+        <!-- КНОПКА ПОДСЧЁТА -->
         <div class="submit-button-wrapper">
           <button type="submit" class="btn btn-primary" id="calculate-btn">Посчитать</button>
           <img 
@@ -38,22 +38,49 @@
         </div>
     </form>
 
-    {% if result_input %}
+    {% if result_data and result_data.html %}
     <div class="result-box">
-        <h2>Наилучший способ получения:</h2>
-        {{ result_input | safe }}
+        <h2>Способ получения:</h2>
+        {{ result_data.html | safe }}
+
+        <!-- КНОПКА "ВЫБРАТЬ ДРУГОЙ МЕТОД" -->
+        {% if result_data.methods and result_data.methods|length > 0 %}
+        <div class="mt-3" style="display: inline-block;">
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Выбрать метод
+                </button>
+                <ul class="dropdown-menu">
+                    {% for method_key in result_data.methods %}
+                    <li>
+                        <form method="POST" style="display: inline;">
+                            <input type="hidden" name="item" value="{{ user_item }}">
+                            <input type="hidden" name="value" value="{{ user_value }}">
+                            <input type="hidden" name="selected_method" value="{{ method_key }}">
+                            <button class="dropdown-item" type="submit">
+                                {{ method_key | replace('_', ' ') | capitalize }}
+                            </button>
+                        </form>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- КНОПКА СБРОСА -->
         <form method="GET" style="margin-top: 16px;">
-          <div class="submit-button-wrapper">
-            <button type="submit" class="btn btn-secondary" id="clear-btn">Сбросить</button>
-            <img 
-            src="{{ url_for('static', filename='images/furn_non_fire.jpg') }}" 
-            class="submit-icon" 
-            id="furn-icon"
-            alt="fire-furn"
-            data-hover="{{ url_for('static', filename='images/furn_fire.jpg') }}"
-            data-default="{{ url_for('static', filename='images/furn_non_fire.jpg') }}"
-          >
-          </div>
+            <div class="submit-button-wrapper">
+                <button type="submit" class="btn btn-secondary" id="clear-btn">Сбросить</button>
+                <img 
+                    src="{{ url_for('static', filename='images/furn_non_fire.jpg') }}" 
+                    class="submit-icon" 
+                    id="furn-icon"
+                    alt="Печь"
+                    data-hover="{{ url_for('static', filename='images/furn_fire.jpg') }}"
+                    data-default="{{ url_for('static', filename='images/furn_non_fire.jpg') }}"
+                >
+            </div>
         </form>
     </div>
     {% endif %}

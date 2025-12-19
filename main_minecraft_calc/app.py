@@ -50,32 +50,76 @@ dungeon_names = load_dungeons_data()
 # СОЗДАНИЕ ОСНОВНОЙ СТРАНИЦЫ
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    result_input = None
+    result_data = None
+    user_item = ""
+    user_value = ""
+
     if request.method == 'POST':
         try:
             item = request.form['item']
             value = int(request.form['value'])
-            result_input = process_input(item, value)
-        except ValueError:
-            result_input = "Ошибка: введите корректное число."
-        except Exception as e:
-            result_input = f"Ошибка: {e}"
+            user_item = item
+            user_value = value
 
-    return render_template('index.html', result_input=result_input)
+            full_item = find_item_by_name(item)
+            if not full_item:
+                result_data = {"html": f"Предмет '{item}' не найден.",
+                               "methods": []}
+            else:
+                selected_method = request.form.get('selected_method')
+                if not selected_method:
+                    selected_method = full_item['obtainable']['primary_method']
+
+                calc_result = calculate_method_by_name(full_item,
+                                                       selected_method, value)
+                html_result = format_method_result(selected_method,
+                                                   calc_result)
+
+                result_data = {
+                    "item_obj": full_item,
+                    "value": value,
+                    "methods": get_all_method_names(full_item),
+                    "selected_method": selected_method,
+                    "html": html_result
+                }
+
+        except ValueError:
+            result_data = {"html": "Ошибка: введите корректное число.",
+                           "methods": []}
+        except Exception as e:
+            result_data = {"html": f"Ошибка: {e}", "methods": []}
+
+    return render_template(
+        'index.html',
+        result_data=result_data,
+        user_item=user_item,
+        user_value=user_value
+    )
 
 
 def process_input(item, value):
-    return calculate_resources(item, value)
+    full_item = find_item_by_name(item)
+    if not full_item:
+        return {
+            "error": f"Предмет '{item}' не найден.",
+            "methods": [],
+            "selected_method": None,
+            "html": f"Предмет '{item}' не найден."
+        }
 
+    all_methods = get_all_method_names(full_item)
+    primary = full_item['obtainable']['primary_method']
 
-def calculate_resources(item_name, value):
-    item = find_item_by_name(item_name)
-    if not item:
-        return f"Предмет '{item_name}' не найден."
+    primary_result = calculate_method_by_name(full_item, primary, value)
+    primary_html = format_method_result(primary, primary_result)
 
-    result = define_primary_method(item, value)
-    result['method'] = item['obtainable']['primary_method']
-    return method_format_main(result)
+    return {
+        "item_obj": full_item,
+        "value": value,
+        "methods": all_methods,
+        "selected_method": primary,
+        "html": primary_html
+    }
 
 
 # ПОИСК ПРЕДМЕТА ПО ВВЕДННОМУ В ПОЛЕ НАЗВАНИЮ
@@ -86,94 +130,134 @@ def find_item_by_name(name):
     return None
 
 
-# ОПРДЕЛЕНИЕ МЕТОДА ПОЛУЧЕНИЯ ПРЕДМЕТА (СТАНДАРТНОГО)
-def define_primary_method(item, value):
-    method = item.get('obtainable', {}).get('primary_method')
-    if method == 'mining':
-        return mining(item, value,)
-    elif method == 'crafting':
+# ПОИСК АЛЬТЕРНАТИВНЫХ МЕТОДОВ СОЗДАНИЯ ПРЕДМЕТА
+def get_all_method_names(item):
+    methods = item.get('obtainable', {}).get('methods', {})
+    return list(methods.keys())
+
+
+# РАСЧЁТ ДЛЯ ВСЕХ ВОЗМОЖНЫХ МЕТОДОВ
+def calculate_method_by_name(item, method_name, value):
+    if method_name == 'mining':
+        return mining(item, value)
+    elif method_name == 'crafting':
         return crafting(item, value)
-    elif method == 'stripping':
+    elif method_name == 'stripping':
         return stripping(item, value)
-    elif method == 'naturally':
+    elif method_name == 'naturally':
         return naturally(item, value)
-    elif method == 'from_mobs':
+    elif method_name == 'from_mobs':
         return from_mobs(item, value)
-    elif method == 'from_chest':
+    elif method_name == 'from_chest':
         return from_chest(item, value)
-    elif method == 'smelting':
+    elif method_name == 'smelting':
         return smelting(item, value)
+    else:
+        return {"error": f"Метод '{method_name}' не поддерживается."}
 
 
 # ОПРДЕЛЕНИЕ МЕТОДА ПОЛУЧЕНИЯ ПРЕДМЕТА ДЛЯ ВЫВОДА И ФОРМАТИРОВАНИЯ
-def method_format_main(result_data):
-    method = result_data.get('method')
-    if method == 'mining':
+def format_method_result(method_name, result_data):
+    if method_name == 'mining':
         return mining_format(result_data)
-    elif method == 'crafting':
+    elif method_name == 'crafting': 
         return crafting_format(result_data)
-    elif method == 'stripping':
+    elif method_name == 'stripping':
         return stripping_format(result_data)
-    elif method == 'from_mobs':
+    elif method_name == 'from_mobs':
         return from_mobs_format(result_data)
-    elif method == 'naturally':
+    elif method_name == 'naturally':
         return naturally_format(result_data)
-    elif method == 'smelting':
+    elif method_name == 'smelting':
         return smelting_format(result_data)
-    elif method == 'from_chest':
+    elif method_name == 'from_chest':
         return from_chest_format(result_data)
+    else:
+        return f"<p>Неизвестный метод: {method_name}</p>"
 
 
 # ФОРМАТИРОВАНИЕ
 # ########################################################################### #
 def mining_format(result_data):
+    img_list = []
+    for key in result_data['all_methods']:
+        key_img2 = 'minecraft_' + key.replace(':', '_')
+        i_url2 = f'<img src="static/calc_img_items/{key_img2}.png"\
+                   width="40" height="40">'
+        img_list.append(i_url2)
+
+    key_img = result_data['minimal_tool']
+    key_img = 'minecraft_' + key_img.replace(':', '_')
+    i_url = f'<img src="static/calc_img_items/{key_img}.png"\
+             width="40" height="40">'
+
+    key_img3 = result_data['source_blocks']
+    key_img3 = key_img3.replace(':', '_')
+    i_url3 = f'<img src="static/calc_img_items/{key_img3}.png"\
+              width="40" height="40">'
+
     for key in item_names:
         if result_data['source_blocks'] == key:
             result_data['source_blocks'] = item_names[key]
         if result_data['minimal_tool'] == key:
             result_data['minimal_tool'] = item_names[key]
-        else:
-            pass
+
     new_result = {}
     for key_2, value in result_data['all_methods'].items():
         key_2 = item_names.get(key_2, key_2)
         new_result[key_2] = value
     result_data['all_methods'] = new_result
-    print(result_data)
+
     return f"""
         <h3>Добыча</h3>
         <p>  </p>
-        <p>Минимальный инструмент: {result_data['minimal_tool']}</p>
+        <p>Минимальный инструмент: {result_data['minimal_tool']} {i_url}</p>
         <p>Нужно сломать блоков: {result_data['blocks_needed']}</p>
-        <p>Добывается из: {result_data['source_blocks']}</p>
+        <p>Добывается из: {result_data['source_blocks']} {i_url3}</p>
         <h4>Время добычи для каждого инструмента:</h4>
         <ul>
-        {''.join([f'<li>{tool}: {time:.2f} секунд</li>' for tool,
-                 time in result_data['all_methods'].items()])}
+        {''.join([f'<li>{tool}: {time:.2f} секунд {img}</li>'
+                  for (tool, time), img in
+                  zip(result_data['all_methods'].items(), img_list)])}
         </ul>
         """
 
 
 # ########################################################################### #
 def crafting_format(result_data):
+    img_list = []
+    for key in result_data['needed_ingredients']:
+        key_img = key.replace(':', '_')
+        i_url = f'<img src="static/calc_img_items/{key_img}.png"\
+                 width="40" height="40">'
+        img_list.append(i_url)
+    print(result_data)
+    print(img_list)
     new_ing_list = {}
     for name_ru, value in result_data['needed_ingredients'].items():
         name_ru = item_names.get(name_ru, name_ru)
         new_ing_list[name_ru] = value
     result_data['needed_ingredients'] = new_ing_list
-    ingredients_list = '<br>'.join([f"{name}: {count}" for name, count in
-                                   result_data['needed_ingredients'].items()])
+
     return f"""
         <h3>Крафт</h3>
         <p>  </p>
         <p>Станок: {result_data['craft_station']}</p>
         <h4>Ингредиенты:</h4>
-        <p>{ingredients_list}</p>
+        <ul>{''.join([f"<li>{name}: {count} {img}<li>"
+                     for (name, count), img in
+                     zip(result_data['needed_ingredients'].items(),
+                     img_list)])}</p>
+        </ul>
         """
 
 
 # ########################################################################### #
 def stripping_format(result_data):
+    key_img = result_data['stripping_block']
+    key_img = key_img.replace(':', '_')
+    i_url = f'<img src=static/calc_img_items/{key_img}.png\
+             width="40" height="40">'
     for key_strip in item_names:
         if result_data['stripping_block'] == key_strip:
             result_data['stripping_block'] = item_names[key_strip]
@@ -186,12 +270,12 @@ def stripping_format(result_data):
             break
         else:
             pass
-    print(result_data['stripping_block'])
     return f"""
         <h3>Обтёсывание</h3>
         <p>  </p>
         <p>Нужно обтесать: {result_data['strip_block_count']}</p>
-        <p>Из чего(кого) добывается: {result_data['stripping_block']}</p>
+        <p>Из чего(кого) добывается:
+        {result_data['stripping_block']} {i_url}</p>
         <p>Инструмент: {result_data['required_tool']}</p>
         """
 
@@ -230,7 +314,8 @@ def from_mobs_format(result_data):
         desc = f"""
         <li>
             <strong>Моб:</strong> {opt['mob']}<br>
-            <strong>Нужно убить мобов:</strong> {opt['kills_needed']}<br>
+            <strong>Нужно в среднем убить мобов:</strong>\
+            {opt['kills_needed']}<br>
             <strong>Специальное условие:</strong> {spec}<br>
             <p>  </p>
         </li>
@@ -247,6 +332,10 @@ def from_mobs_format(result_data):
 
 # ########################################################################### #
 def smelting_format(result_data):
+    key_img = result_data['smelt_ingredient']
+    key_img = key_img.replace(':', '_')
+    i_url = f'<img src=static/calc_img_items/{key_img}.png\
+             width="40" height="40">'
     for key_smelt in item_names:
         if result_data['smelt_ingredient'] == key_smelt:
             result_data['smelt_ingredient'] = item_names[key_smelt]
@@ -258,7 +347,7 @@ def smelting_format(result_data):
         <p>  </p>
         <p><strong>Станок:</strong> {result_data['table']}<p>
         <p><strong>Ингредиент для
-        переплавки:</strong> {result_data['smelt_ingredient']}<p>
+        переплавки:</strong> {result_data['smelt_ingredient']} {i_url}<p>
         <p><strong>Нужное количество:</strong> {result_data['need_count']}<p>
         """
 
@@ -280,7 +369,8 @@ def from_chest_format(result_data):
         desc = f"""
         <li>
             <strong>Структура с сундуком:</strong> {opt['dungeon']}<br>
-            <strong>Нужно залутать сундуков:</strong> {opt['result']}<br>
+            <strong>Нужно в среднем залутать сундуков:</strong>\
+            {opt['result']}<br>
             <p>  </p>
         </li>
         """
@@ -325,7 +415,7 @@ def mining(item, value):
         else:
             mining_block = ' или '.join(source_block)
     else:
-        mining_block = item['name']
+        mining_block = item['id']
     result = {}
     for tool, data in mining_methods.items():
         speed = data['speed']

@@ -25686,7 +25686,7 @@
                     "stripping": {
                         "id": "minecraft:sweet_berry_bush",
                         "count": [2, 3],
-                        "required_tool": "hand"
+                        "required_tool": "Рука"
                     }
                 }
             }
@@ -25989,7 +25989,7 @@
                     "stripping": {
                         "id": "minecraft:pumpkin",
                         "count": 1,
-                        "required_tool": "shears"
+                        "required_tool": "Ножницы"
                     }
                 }
             }
