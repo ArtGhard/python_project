@@ -40028,7 +40028,7 @@
             "id": "minecraft:coal",
             "name": "Уголь",
             "obtainable": {
-                "primary_method": "crafting",
+                "primary_method": "mining",
                 "methods": {
                     "crafting": {
                         "type": {

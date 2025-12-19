@@ -165,11 +165,13 @@ def stripping_format(result_data):
     for key_strip in item_names:
         if result_data['stripping_block'] == key_strip:
             result_data['stripping_block'] = item_names[key_strip]
+            break
         else:
             pass
     for key_strip_mb in mob_names:
         if result_data['stripping_block'] == key_strip_mb:
             result_data['stripping_block'] = mob_names[key_strip_mb]
+            break
         else:
             pass
     print(result_data['stripping_block'])
@@ -233,6 +235,7 @@ def smelting_format(result_data):
     for key_smelt in item_names:
         if result_data['smelt_ingredient'] == key_smelt:
             result_data['smelt_ingredient'] = item_names[key_smelt]
+            break
         else:
             pass
     return f"""
