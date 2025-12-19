@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<!-- ШАПКА -->
 <div class="header-bar">
     <img src="{{url_for('static', filename='images/main_icon.png')}}" class="main-icon">
     <div class="circle-end"></div>
@@ -10,6 +11,7 @@
     </div>
 </div>
 
+<!-- ОСНОВНАЯ ЧАСТЬ -->
 <main class="main-content">
     <h1>Калькулятор крафта</h1>
     <form method="POST" class="craft-form">

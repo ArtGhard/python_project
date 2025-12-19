@@ -8,28 +8,28 @@ import statistics
 
 app = Flask(__name__)
 
-
+# ЗАГРУЗКА ДАННЫХ ДЛЯ ПОДСЧЁТА
 def load_counting_data():
     basedir = Path(__file__).resolve().parent
     filepath = basedir / 'data' / 'items.json'
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
+# ЗАГРУЗКА ДАННЫХ ДЛЯ ПЕРЕВОДА МОБОВ
 def load_mob_data():
     basedir = Path(__file__).resolve().parent
     filepath = basedir / 'data' / 'mobs.json'
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
+# ЗАГРУЗКА ДАННЫХ ДЛЯ ПЕРЕВОДА ПРЕДМЕТОВ
 def load_items_data():
     basedir = Path(__file__).resolve().parent
     filepath = basedir / 'data' / 'items_and_names.json'
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
+# ЗАГРУЗКА ДАННЫХ ДЛЯ ПЕРЕВОДА СТРУКТУР
 def load_dungeons_data():
     basedir = Path(__file__).resolve().parent
     filepath = basedir / 'data' / 'chest_dungeons.json'
@@ -43,6 +43,7 @@ item_names = load_items_data()
 dungeon_names = load_dungeons_data()
 
 
+# СОЗДАНИЕ ОСНОВНОЙ СТРАНИЦЫ
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result_input = None
@@ -73,6 +74,7 @@ def calculate_resources(item_name, value):
     return method_format_main(result)
 
 
+# ПОИСК ПРЕДМЕТА ПО ВВЕДННОМУ В ПОЛЕ НАЗВАНИЮ 
 def find_item_by_name(name):
     for item in recipes['all_items']:
         if item['name'] == name:
@@ -80,6 +82,7 @@ def find_item_by_name(name):
     return None
 
 
+# ОПРДЕЛЕНИЕ МЕТОДА ПОЛУЧЕНИЯ ПРЕДМЕТА (СТАНДАРТНОГО)
 def define_primary_method(item, value):
     method = item.get('obtainable', {}).get('primary_method')
     if method == 'mining':
@@ -98,6 +101,7 @@ def define_primary_method(item, value):
         return smelting(item, value)
 
 
+# ОПРДЕЛЕНИЕ МЕТОДА ПОЛУЧЕНИЯ ПРЕДМЕТА ДЛЯ ВЫВОДА И ФОРМАТИРОВАНИЯ
 def method_format_main(result_data):
     method = result_data.get('method')
     if method == 'mining':
@@ -116,6 +120,8 @@ def method_format_main(result_data):
         return from_chest_format(result_data)
 
 
+# ФОРМАТИРОВАНИЕ
+# ########################################################################### #
 def mining_format(result_data):
     for key in item_names:
         if result_data['source_blocks'] == key:
@@ -144,6 +150,7 @@ def mining_format(result_data):
         """
 
 
+# ########################################################################### #
 def crafting_format(result_data):
     new_ing_list = {}
     for name_ru, value in result_data['needed_ingredients'].items():
@@ -161,6 +168,7 @@ def crafting_format(result_data):
         """
 
 
+# ########################################################################### #
 def stripping_format(result_data):
     for key_strip in item_names:
         if result_data['stripping_block'] == key_strip:
@@ -184,6 +192,7 @@ def stripping_format(result_data):
         """
 
 
+# ########################################################################### #
 def naturally_format(result_data):
     return f"""
         <h3>Натуральное выпадение</h3>
@@ -195,6 +204,7 @@ def naturally_format(result_data):
     """
 
 
+# ########################################################################### #
 def from_mobs_format(result_data):
     options_list = []
     translated_data = []
@@ -231,6 +241,7 @@ def from_mobs_format(result_data):
         """
 
 
+# ########################################################################### #
 def smelting_format(result_data):
     for key_smelt in item_names:
         if result_data['smelt_ingredient'] == key_smelt:
@@ -248,6 +259,7 @@ def smelting_format(result_data):
         """
 
 
+# ########################################################################### #
 def from_chest_format(result_data):
     options_list = []
     translated_data = []
@@ -277,9 +289,9 @@ def from_chest_format(result_data):
         {options_html}
         """
 
-# ####################################################### 991
 
-
+# РАСЧЁТ
+# ########################################################################### #
 def mining(item, value):
     mining_data = item['obtainable']['methods']['mining']
     minimal_tool = mining_data.get('minimal_tool', 'unknown')
@@ -324,6 +336,7 @@ def mining(item, value):
     return final_result
 
 
+# ########################################################################### #
 def crafting(item, value):
     crafting_data = item['obtainable']['methods']['crafting']
     first_type = next(iter(crafting_data['type']))
@@ -353,6 +366,7 @@ def crafting(item, value):
     return final_result
 
 
+# ########################################################################### #
 def stripping(item, value):
     stripping_data = item['obtainable']['methods']['stripping']
     result_count = stripping_data.get('count')
@@ -367,6 +381,7 @@ def stripping(item, value):
     return final_result
 
 
+# ########################################################################### #
 def naturally(item, value):
     nature_data = item['obtainable']['methods']['naturally']
     conditions = nature_data.get('conditions')
@@ -381,6 +396,7 @@ def naturally(item, value):
     return final_result
 
 
+# ########################################################################### #
 def from_mobs(item, value):
     drop_options2 = item['obtainable']['methods']['from_mobs']['type']
     drop_options = drop_options2['mob_drops']['drop_options']
@@ -413,6 +429,7 @@ def from_mobs(item, value):
     return final_result
 
 
+# ########################################################################### #
 def smelting(item, value):
     smelting_data = item['obtainable']['methods']['smelting']['type']
     smelt = smelting_data['furnace']['ingredient_options'][0]
@@ -426,6 +443,7 @@ def smelting(item, value):
     return final_result
 
 
+# ########################################################################### #
 def from_chest(item, value):
     chest_data_big = item['obtainable']['methods']['from_chest']['type']
     chest_data = chest_data_big['chest_loot']['loot_options']
@@ -449,5 +467,6 @@ def from_chest(item, value):
     return final_result
 
 
+# ЗАПУСК САЙТА
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
