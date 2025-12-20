@@ -6,7 +6,6 @@ import json
 import math
 import statistics
 
-# ПРОЧИТАЙТЕ README! (ПРО РАЗРАБОТКУ ПРОЕКТА В САМОМ НИЗУ)
 
 app = Flask(__name__)
 app.secret_key = 'add_you_super_mega_ultra_secret_key'
